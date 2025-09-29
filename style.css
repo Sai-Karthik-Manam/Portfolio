@@ -547,6 +547,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* Keep skills in multiple columns on mobile to avoid long scroll */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
   .contact-section form {
     padding: 0 10px;
   }
