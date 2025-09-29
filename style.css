@@ -516,9 +516,12 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   .about-wrapper {
@@ -549,8 +552,11 @@ footer {
   }
 
   .profile-links {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   .resume-button {
@@ -559,8 +565,11 @@ footer {
   }
 
   .project-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
