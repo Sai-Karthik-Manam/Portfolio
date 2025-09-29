@@ -602,4 +602,15 @@ footer {
   .experience-card {
     padding: 15px;
   }
+
+  /* Force two columns for skills on very small screens */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .skill {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
 }
