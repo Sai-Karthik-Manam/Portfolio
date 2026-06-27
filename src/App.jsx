@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 // ─── Data ────────────────────────────────────────────────────────────────────
 const NAV_LINKS = ["about","skills","projects","education","experience","certifications","achievements","resume","contact"];
 
-const SKILLS = ["Python","Flask","HTML","CSS","JavaScript","Git","GitHub","MySQL","MongoDB","Data Analytics","Machine Learning"];
+const SKILLS = ["Python","SQL","Flask",".NETCore","HTML","CSS","JavaScript","JQuery","Ajax","MySQL","SQL Server","Data Analytics","NLTK","NLP","MediaPipe","ONNX","Git","GitHub"];
 
 const PROJECTS = [
   {
@@ -34,6 +34,13 @@ const PROJECTS = [
     desc: "Web application to note daily reminders and tasks efficiently.",
     github: "https://github.com/Sai-Karthik-Manam/TODO-App",
     emoji: "✅",
+  },
+  {
+  title: "AI-Based Augmented Reality Smart Shopping Assistant",
+  tech: "Django, Python, MediaPipe, JavaScript, HTML, CSS, SQLite, ONNX, rembg",
+  desc: "A real-time AR virtual try-on system using MediaPipe Pose detection.",
+  github: "https://github.com/Sai-Karthik-Manam/Live-Lens",
+  emoji: "",
   },
 ];
 
