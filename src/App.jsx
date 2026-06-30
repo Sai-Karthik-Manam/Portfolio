@@ -11,7 +11,7 @@ const PROJECTS = [
     tech: "Python, NLTK, YouTube API",
     desc: "Summarizes YouTube video transcripts using NLP and the YouTube Data API.",
     github: "https://github.com/Sai-Karthik-Manam/YouTube_Transcript_Summarizer",
-    live: "https://youtube-transcript-summarizer-i4qj.onrender.com/",
+    live: "https://you-tube-transcript-summarizer-xi.vercel.app/",
     emoji: "🎬",
   },
   {
