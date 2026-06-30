@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 // ─── Data ────────────────────────────────────────────────────────────────────
 const NAV_LINKS = ["about","skills","projects","education","experience","certifications","achievements","resume","contact"];
 
-const SKILLS = ["Python","SQL","Flask",".NETCore","HTML","CSS","JavaScript","JQuery","Ajax","MySQL","SQL Server","Data Analytics","NLTK","NLP","MediaPipe","ONNX","Git","GitHub"];
+const SKILLS = ["Python","SQL","Flask",".NETCore","HTML5","CSS","JavaScript","JQuery","Ajax","MySQL","SQL Server","Data Analytics","NLTK","NLP","MediaPipe","ONNX","Git","GitHub"];
 
 const PROJECTS = [
   {
