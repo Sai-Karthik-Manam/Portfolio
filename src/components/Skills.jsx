@@ -1,24 +1,37 @@
+import { useState } from "react";
 import { FadeIn, SectionTitle } from "./Shared";
 import { SKILLS } from "../data/portfolioData";
 
 export default function Skills() {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <section id="skills" className="section">
       <div className="container">
         <FadeIn><SectionTitle>Skills</SectionTitle></FadeIn>
-        <div className="skills-categories-grid">
-          {SKILLS.map((skillGroup, i) => (
-            <FadeIn key={skillGroup.category} delay={i * 0.1}>
-              <div className="skill-category">
-                <h3 className="skill-category-title">{skillGroup.category}</h3>
-                <div className="skills-grid">
-                  {skillGroup.items.map((s, j) => (
-                    <div className="skill-chip" key={s}>{s}</div>
-                  ))}
-                </div>
+        <div className="tabs-container">
+          <FadeIn delay={0.1}>
+            <div className="tabs-header">
+              {SKILLS.map((skillGroup, i) => (
+                <button 
+                  key={skillGroup.category} 
+                  className={`tab-btn ${activeTab === i ? 'active' : ''}`}
+                  onClick={() => setActiveTab(i)}
+                >
+                  {skillGroup.category}
+                </button>
+              ))}
+            </div>
+          </FadeIn>
+          <div className="tabs-content">
+            <FadeIn key={activeTab}>
+              <div className="skills-grid">
+                {SKILLS[activeTab].items.map((s) => (
+                  <div className="skill-chip" key={s}>{s}</div>
+                ))}
               </div>
             </FadeIn>
-          ))}
+          </div>
         </div>
       </div>
     </section>
